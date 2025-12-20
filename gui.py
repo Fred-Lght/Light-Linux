@@ -16,6 +16,8 @@ def run_cmd():
     except Exception as e:
         return {"stdout": "", "stderr": str(e), "returncode": -1 }
 
+
+global result
 result = run_cmd()
 print("Out", result["stdout"]) 
 
@@ -43,8 +45,16 @@ class MainWindow(QMainWindow):
         self.resize(1920, 1080)
 
     def change_text(self):
-        self.label.setText("Установка началась (нет)")
+        global result
+        result = run_cmd()
 
+        if result["returncode"] == 0:
+            self.label.setText("Установка началась (нет)")    
+        else:
+            self.label.setText("No internet (loch)")
+
+        
+            
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = MainWindow()
