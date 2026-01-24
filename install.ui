@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Installer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_3">
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>370</y>
+          <width>988</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Вас приветсвует мастер установщик *Plase Holder*</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>750</y>
+          <width>988</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Установить?</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_4"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
